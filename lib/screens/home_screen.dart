@@ -4,7 +4,7 @@ import 'add_doubt_screen.dart';
 import 'view_doubt_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();

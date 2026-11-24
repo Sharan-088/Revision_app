@@ -4,7 +4,7 @@ import '../model/doubt.dart';
 class ViewDoubtScreen extends StatefulWidget {
   final Doubt doubt;
 
-  const ViewDoubtScreen({Key? key, required this.doubt}) : super(key: key);
+  const ViewDoubtScreen({super.key, required this.doubt});
 
   @override
   State<ViewDoubtScreen> createState() => _ViewDoubtScreenState();

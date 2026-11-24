@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../model/doubt.dart';
 
 class AddDoubtScreen extends StatefulWidget {
-  const AddDoubtScreen({Key? key}) : super(key: key);
+  const AddDoubtScreen({super.key});
 
   @override
   State<AddDoubtScreen> createState() => _AddDoubtScreenState();
@@ -80,7 +80,7 @@ class _AddDoubtScreenState extends State<AddDoubtScreen> {
               const SizedBox(height: 16),
 
               DropdownButtonFormField(
-                value: _selectedSubject,
+                initialValue: _selectedSubject,
                 items: subjects
                     .map(
                       (sub) => DropdownMenuItem(
@@ -102,7 +102,7 @@ class _AddDoubtScreenState extends State<AddDoubtScreen> {
               const SizedBox(height: 16),
 
               DropdownButtonFormField(
-                value: _selectedDifficulty,
+                initialValue: _selectedDifficulty,
                 items: difficultyLevels
                     .map(
                       (level) => DropdownMenuItem(

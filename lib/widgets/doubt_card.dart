@@ -6,10 +6,10 @@ class DoubtCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const DoubtCard({
-    Key? key,
+    super.key,
     required this.doubt,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
